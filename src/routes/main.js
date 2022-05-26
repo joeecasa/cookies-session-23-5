@@ -71,6 +71,7 @@ router.get('/registro', guestMiddleware , mainController.register);
 router.post('/registro' ,upload.single("img"),validations, mainController.createUser);
 
 router.get("/profile",authMiddleware, mainController.profile)
+
 router.get("/logout", mainController.logout)
 
 
